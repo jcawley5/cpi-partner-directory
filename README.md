@@ -61,7 +61,7 @@ Example String request
 }
 ```
 
-Example Binary request
+Example Binary request - see below for obtaining the key from [Mendelson Install](#Mendelson-Install)
 
 ```
 {
@@ -86,3 +86,31 @@ After creating each parameter using the `Get String Parameters` request with the
 ![Flow](./images/processing.png)
 ![Flow](./images/security.png)
 ![Flow](./images/MDN.png)
+
+## Mendelson Install
+
+### Notes for Mac setup
+
+- [Download zip](https://sourceforge.net/projects/mec-as2/files/install_mendelson_opensource_as2_1.1b63.zip/download)
+- Unzip file
+- Open `mendelson_as2_start.sh` in editor
+- Change line `addToClasspath "jetty9/lib"` to `addToClasspath "jetty10/lib"`
+- Adjust file permission `chmod 755 mendelson_as2_start.sh`
+- Run progam in terminal `./mendelson_as2_start.sh`
+
+### Configuration
+
+- In CPI download the certificate of of the Key Pair `sap_cloudintegrationcertificate`
+  ![CPI](./images/cpi-cert.png)
+
+- Import it into Mendelson within the Sign/Crypt option.
+  ![CPI](./images/mendelson-cert.png)
+
+- Assign this certificate to the partner’s outbound and inbound cert drop downs
+  ![CPI](./images/partner-1.png)
+
+- Export one of the Mendelson test key’s certificate as shown
+  ![CPI](./images/partner-2.png)
+
+- Set this key for the other local Partner config
+  ![CPI](./images/partner-3.png)
