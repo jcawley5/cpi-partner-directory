@@ -112,5 +112,10 @@ After creating each parameter using the `Get String Parameters` request with the
 - Export one of the Mendelson test key’s certificate as shown
   ![CPI](./images/partner-2.png)
 
-- Set this key for the other local Partner config
+- Set this key for a local Partner config
   ![CPI](./images/partner-3.png)
+
+- Add the URL to the AS2 flow as the `Receipt URL` found under the tab `Send` of the partner. Make sure that you include the port `443` in the URL
+  ![CPI](./images/partner-3.png)
+
+- Choose `Test Connection` and choose the options to `Import Certificates`
