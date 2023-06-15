@@ -100,7 +100,7 @@ After creating each parameter using the `Get String Parameters` request with the
 
 ### Configuration
 
-- In CPI, choose the menu option Monitor->Integrations->KeyStore, download the certificate of of the Key Pair `sap_cloudintegrationcertificate`
+- In CPI, choose the menu option Monitor->Integrations->KeyStore, download the certificate of of the Key Pair `sap_cloudintegrationcertificate` by choosing `Download Certificate` found under the `Actions` menu.
   ![CPI](./images/cpi-cert.png)
 
 - Import it into Mendelson within the Sign/Crypt option.
