@@ -121,6 +121,6 @@ After creating each parameter using the `Get String Parameters` request with the
     ![CPI](./images/partner-3.png)
 
 - Add the URL to the AS2 flow as the `Receipt URL` found under the tab `Send` of the partner. Make sure that you include the port `443` in the URL
-  ![CPI](./images/partner-3.png)
+  ![CPI](./images/partner-4.png)
 
 - Choose `Test Connection` and choose the options to `Import Certificates`
